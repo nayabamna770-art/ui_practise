@@ -9,12 +9,12 @@ class PromoBanner extends StatelessWidget {
       margin: const EdgeInsets.all(12),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: Colors.yellow.shade100,
+        color: const Color.fromARGB(255, 245, 227, 68),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
         children: const [
-          Icon(Icons.wb_sunny, color: Colors.orange),
+          Icon(Icons.wb_sunny, color: Color.fromARGB(255, 255, 251, 0)),
           SizedBox(width: 8),
           Text("Hot Today? Try Iced Matcha!"),
         ],

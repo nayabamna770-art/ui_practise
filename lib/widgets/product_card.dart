@@ -50,11 +50,12 @@ class _ProductCardState extends State<ProductCard> {
                 borderRadius: const BorderRadius.vertical(
                   top: Radius.circular(16),
                 ),
-                child: Image.asset(
-                  widget.imagePath,
-                  height: 120, // slightly smaller to stay inside card
-                  width: double.infinity,
-                  fit: BoxFit.cover, // fills card neatly without overflow
+                child: AspectRatio(
+                  aspectRatio: 1, // keeps image square and contained
+                  child: Image.asset(
+                    widget.imagePath,
+                    fit: BoxFit.cover, // fills the box neatly
+                  ),
                 ),
               ),
 

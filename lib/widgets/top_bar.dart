@@ -10,7 +10,7 @@ class TopBar extends StatelessWidget {
       title: const Text(
         "Coffee App",
         style: TextStyle(
-          fontWeight: FontWeight.bold, // 🔥 bold text
+          fontWeight: FontWeight.bold, // bold text
           fontSize: 20,
           color: Color(0xFF5C4033), // deep coffee brown
         ),
